@@ -1,5 +1,25 @@
 * {
-  border: 1px purple solid;
+  border: 0;
+}
+
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/source-sans-pro-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
+    url("../fonts/source-sans-pro-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v13-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v13-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 body {
@@ -89,9 +109,15 @@ input {
   margin: 1vw;
 }
 
-.img-block {
-  width: 10%;
-  height: 10%;
+.test-block {
+  display: flex;
+  max-width: 100%;
+  background-color: blue;
+}
+
+.img-block-img {
+  border-radius: 12px 12px 0px 0px;
+  display: block;
 }
 
 img {
@@ -99,6 +125,57 @@ img {
   max-height: 100%;
 }
 
+.img-block {
+  z-index: 2;
+  width: 15%;
+  height: 15%;
+  /*  */
+  border-radius: 12px 12px 12px 12px;
+}
+
 p {
   margin: 0;
+  background-color: white;
+  text-indent: 20px;
+  font-family: "Source Sans Pro";
+}
+
+p:first-of-type {
+  position: absolute;
+  top: -17px;
+  width: 100%;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p:nth-of-type(2) {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p:last-of-type {
+  border-radius: 0px 0px 12px 12px;
+  font-size: 14px;
+}
+
+p img {
+  width: 7%;
+}
+
+.box-relate {
+  position: relative;
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 500px) {
+  * {
+    border: 1px red solid;
+  }
 }
