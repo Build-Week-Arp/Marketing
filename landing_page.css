@@ -1,5 +1,4 @@
 * {
-  border: 0;
 }
 
 /* source-sans-pro-regular - latin */
@@ -25,6 +24,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 62.5%;
 }
 
 header {
@@ -82,37 +82,80 @@ button {
 }
 input {
   border-radius: 5px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 23px;
+  text-align: center;
 }
 
 .discover-trending {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 30px;
+
+  color: #949494;
+
   display: flex;
   justify-content: center;
+  margin-top: 4vw;
+  height: 50px;
 }
 
 .discover {
-  padding: 5px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.discover:hover {
+  color: #255ad4;
+  cursor: pointer;
+}
+
+.discover:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid;
+  margin: 0 auto;
 }
 
 .trending {
-  padding: 5px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.trending:hover {
+  color: #255ad4;
+  text-decoration: #255ad4;
+  cursor: pointer;
+}
+
+.trending:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 3px solid;
+  margin: 0 auto;
 }
 
 .bigbox1 {
   display: flex;
   justify-content: space-around;
   margin: 1vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .bigbox2 {
   display: flex;
   justify-content: space-around;
   margin: 1vw;
-}
-
-.test-block {
-  display: flex;
-  max-width: 100%;
-  background-color: blue;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .img-block-img {
@@ -127,16 +170,17 @@ img {
 
 .img-block {
   z-index: 2;
-  width: 15%;
-  height: 15%;
+  width: 18%;
   /*  */
   border-radius: 12px 12px 12px 12px;
+  margin-bottom: 6vw;
 }
 
 p {
   margin: 0;
   background-color: white;
-  text-indent: 20px;
+  text-indent: 15px;
+  font-size: 1rem;
   font-family: "Source Sans Pro";
 }
 
@@ -147,7 +191,7 @@ p:first-of-type {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 18px;
 }
 
@@ -155,17 +199,25 @@ p:nth-of-type(2) {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 18px;
 }
 
 p:last-of-type {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 18px;
+
+  /* identical to box height */
+
+  color: #707070;
   border-radius: 0px 0px 12px 12px;
-  font-size: 14px;
 }
 
 p img {
-  width: 7%;
+  width: 10%;
 }
 
 .box-relate {
@@ -176,6 +228,206 @@ p img {
 
 @media (max-width: 500px) {
   * {
-    border: 1px red solid;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1e1e1e;
+  }
+  button {
+    display: flex;
+    color: white;
+    border-radius: 12px;
+    background-color: none;
+    padding: 3px;
+    outline: none;
+  }
+
+  .create {
+    background-color: #255ad4;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .create-case {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sign-in {
+    background-color: #ff2d66;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .sign-in-case {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    align-content: center;
+    flex: 1;
+  }
+  input {
+    border-radius: 5px;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .discover-trending {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 30px;
+
+    color: #949494;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+    height: 50px;
+  }
+
+  .discover {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .discover:hover {
+    color: #255ad4;
+  }
+
+  .discover:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid;
+    margin: 0 auto;
+  }
+
+  .trending {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .trending:hover {
+    color: #255ad4;
+    text-decoration: #255ad4;
+  }
+
+  .trending:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid;
+    margin: 0 auto;
+  }
+
+  .bigbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .bigbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .img-block-img {
+    border-radius: 12px 12px 0px 0px;
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .img-block {
+    z-index: 2;
+    width: 50%;
+    /*  */
+    border-radius: 12px 12px 12px 12px;
+    margin-bottom: 6vw;
+    margin-left: 14vw;
+  }
+
+  p {
+    margin: 0;
+    background-color: white;
+    text-indent: 15px;
+    font-size: 0.8rem;
+    font-family: "Source Sans Pro";
+  }
+
+  p:first-of-type {
+    position: absolute;
+    top: -17px;
+    width: 100%;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  p:nth-of-type(2) {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  p:last-of-type {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 18px;
+
+    /* identical to box height */
+
+    color: #707070;
+    border-radius: 0px 0px 12px 12px;
+  }
+
+  p img {
+    width: 10%;
+  }
+
+  .box-relate {
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   }
 }
