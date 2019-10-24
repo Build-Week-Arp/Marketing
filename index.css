@@ -895,7 +895,7 @@ color: #949494;
     /* logo */
     .logo{
     position: absolute;
-    left:40%;
+    left:43%;
     width:60px;
     height: 60px;
     top: 10%;
@@ -957,7 +957,7 @@ color: #949494;
     .signInButton{
     position: absolute;
     width:120px;
-    left: 32%;
+    left: 35%;
     top: 58%;
     bottom: 33%;
     text-align: center;
@@ -969,8 +969,8 @@ color: #949494;
     .accountButton{
       position: absolute;
       margin-right: 1%;
-      width:120px;
-      left: 32%;
+      width:130px;
+      left: 34%;
       top: 75%;
       bottom: 15%;
       text-align: center;
