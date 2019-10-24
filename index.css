@@ -359,9 +359,8 @@ color: #707070;
 
 
 
-
+ /*tablet*/
 @media screen and (max-width: 800px) {
- /* image one */
 
 /* image one */
 .imageOne{
@@ -457,6 +456,11 @@ color: #707070;
 
 /* Rectangle 88 */
 .rectangle88{
+  position: relative;
+    left: 3px;
+    bottom: 59px;
+    width: 91%;
+    height: 50px;
   background: #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px 12px 12px 12px;
@@ -473,7 +477,7 @@ color: #707070;
   position: absolute;
   left: 5%;
   right: 83.18%;
-  bottom:-20%;
+  bottom:18%;
 
   font-family: Source Sans Pro;
   font-style: normal;
@@ -487,7 +491,7 @@ color: #707070;
 .eliares{
   position: relative;
   top:60%;
-  left: 35%;
+  left: 38%;
 
   font-family: Source Sans Pro;
   font-style: light;
@@ -500,7 +504,7 @@ color: #707070;
 
 .ninetyfour{
   position: absolute;
-  top:-25%;
+  top:-10%;
   left: 80%;
 
   font-family: Source Sans Pro;
@@ -512,15 +516,19 @@ color: #707070;
 }
 
 .blackLine{
-  position: absolute;
-  top:-25%;
-  border: 1px solid #393939;
-  border-radius: 0px 0px 12px 12px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
+
+    position: relative;
+    top:0%;
+    border: 1px solid #393939;
+    border-radius: 0px 0px 12px 12px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .trending{
-padding: 1%;
+  position: absolute;
+width: 91px;
+height: 30px;
+left: 52%;
 
 padding-top:2%;
 font-family: Source Sans Pro;
@@ -537,7 +545,7 @@ color: #949494;
   position: absolute;
 width: 91px;
 height: 30px;
-left: 40%;
+left: 30%;
 
 padding-top:2%;
 font-family: Source Sans Pro;
@@ -597,13 +605,11 @@ color: #949494;
   color: #FFFFFF;
   }
   
-
-  
   /* Search... */
   .topNav input[type=text]{
   position: absolute;
   left: 15%;
-  right: 55%;
+  right: 50%;
   top: 35%;
   bottom: 35%;
   
@@ -642,7 +648,7 @@ color: #949494;
   left: 80%;
   top: 33%;
   bottom: 33%;
-  
+  text-align: center;
   background: #FF2D66;
   border-radius: 6px;
   }
@@ -655,7 +661,7 @@ color: #949494;
     left: 55%;
     top: 33%;
     bottom: 33%;
-    
+    text-align: center;
     background: #255AD4;
     border-radius: 6px;
     }
@@ -680,3 +686,316 @@ color: #949494;
   }
   
 }
+
+
+
+
+
+/* phone */
+@media screen and (max-width: 500px) {
+
+  /* image one */
+  .imageOne{
+    width: 130%;
+  }
+  
+  /* image two */
+  .imageTwo{
+    width: 130%;
+  }
+  
+  /* image three */
+  .imageThree{
+    width: 130%;
+  }
+  
+  /* image four */
+  .imageFour{
+    width: 130%;
+  }
+  
+  /* image five */
+  .imageFive{
+    width: 130%;
+  }      
+  
+  
+  .topRow{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding:10%;
+    padding-top: 13%;
+    max-width: 60%;
+    padding-bottom: 5%;
+  }
+  
+  
+  /* image five */
+  .imageSix{
+    width: 130%;
+  }      
+  
+  /* image five */
+  .imageSeven{
+     width: 130%;
+  }  
+  
+  /* image eight */
+  .imageEight{
+     width: 130%;
+  }  
+  
+  /* image nine */
+  .imageNine{
+     width: 130%;
+  }  
+  
+  /* image ten */
+  .imageTen{
+     width: 130%;
+  } 
+  
+  .bottomRow{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding:10%;
+    padding-top: 13%;
+    max-width: 60%;
+    padding-bottom: 5%;
+  }
+  
+  
+  
+  /* Rectangle 88 */
+  .rectangle88{
+    position: relative;
+    left: 3px;
+    bottom: 59px;
+    width: 130.8%;
+    height: 70px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 12px 12px;
+  }
+  
+  .heart{
+    position: absolute;
+    left: 88%;
+    top: 60%;
+  }
+  
+  .title{
+    position: absolute;
+    left: 38%;
+    right: 83.18%;
+    bottom:30%;
+  
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+  
+    color: #000000;
+  }
+  
+  .eliares{
+    position: relative;
+    top:60%;
+    left: 5%;
+  
+    font-family: Source Sans Pro;
+    font-style: light;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 18px;
+  
+    color: #000000;
+  }
+  
+  .ninetyfour{
+    position: absolute;
+    top:35%;
+    left: 80%;
+  
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #707070;
+  }
+  
+  .blackLine{
+    position: relative;
+    top:10%;
+    border: 1px solid #393939;
+    border-radius: 0px 0px 12px 12px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  
+  .trending{
+    position: absolute;
+  width: 91px;
+  height: 30px;
+  left: 52%;
+  
+  padding-top:2%;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  
+  color: #949494;
+  }
+  
+  .discover{
+    position: absolute;
+  width: 91px;
+  height: 30px;
+  left: 30%;
+  
+  padding-top:2%;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  
+  color: #949494;
+  }
+  
+  
+  
+  
+  
+  .topNav{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    }
+    
+    
+    /* Rectangle 1 */
+    .rectangle1{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #1E1E1E;
+    }
+    
+    /* logo */
+    .logo{
+    position: absolute;
+    left:40%;
+    width:60px;
+    height: 60px;
+    top: 10%;
+    
+    background: #FF2D66;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    }
+    
+    /* AR P . */
+    .arp{
+    margin-left: 15%;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 15px;
+    
+    color: #FFFFFF;
+    }
+    
+    /* Search... */
+    .topNav input[type=text]{
+    position: absolute;
+    left: 13%;
+    right: 10%;
+    top: 40%;
+    width: 70%;
+    bottom: 50%;
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 23px;
+    
+    color: #000000;
+    }
+    
+    /* Create Account */
+    .createAccount{
+    left: 85.36%;
+    right: 8.39%;
+    top: 31.67%;
+    bottom: 25%;
+    
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 23px;
+    
+    background: none;
+    border-style: none;
+    color: #FFFFFF;
+    }
+    
+    /* signInButton */
+    .signInButton{
+    position: absolute;
+    width:120px;
+    left: 32%;
+    top: 58%;
+    bottom: 33%;
+    text-align: center;
+    background: #FF2D66;
+    border-radius: 6px;
+    }
+    
+    /* accountButton */
+    .accountButton{
+      position: absolute;
+      margin-right: 1%;
+      width:120px;
+      left: 32%;
+      top: 75%;
+      bottom: 15%;
+      text-align: center;
+      background: #255AD4;
+      border-radius: 6px;
+      }
+    
+    /* Sign In */
+    .signIn{
+    
+      left: 94.84%;
+      right: 2.29%;
+      top: 30%;
+      bottom: 26.67%;
+      
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 23px;
+      
+      background: none;
+      border-style: none;
+      color: #FFFFFF;
+    }
+    
+  }
+  
